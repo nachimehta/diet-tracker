@@ -1,0 +1,1359 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>Diet_Tracker_2_3</h:title>
+    <model>
+      <instance>
+        <NewWidgets id="NewWidgets">
+		  <!-- Green Vegetables -->
+		  <mustard_turnip_collard_greens>0</mustard_turnip_collard_greens>
+		  <kale>0</kale>
+		  <watercress>0</watercress>
+		  <bok_choy>0</bok_choy>
+		  <spinach>0</spinach>
+		  <broccoli_rabe>0</broccoli_rabe>
+		  <chinese_napa_cabbage>0</chinese_napa_cabbage>
+		  <brussel_sprouts>0</brussel_sprouts>
+		  <swiss_chard>0</swiss_chard>
+		  <arugula>0</arugula>
+		  
+		  <!-- Non-Green Vegetables -->
+		  <radish>0</radish>
+		  <bean_sprout>0</bean_sprout>
+		  <red_pepper>0</red_pepper>
+		  <radicchio>0</radicchio>
+		  <turnip>0</turnip>
+		  <carrot>0</carrot>
+		  <cauliflower>0</cauliflower>
+		  <artichoke>0</artichoke>
+		  <tomato>0</tomato>
+		  <butternut_squash>0</butternut_squash>
+		  
+		  <!-- Fruits -->
+          <strawberry>0</strawberry>
+		  <blackberries>0</blackberries>
+		  <plum>0</plum>
+		  <raspberries>0</raspberries>
+		  <blueberries>0</blueberries>
+		  <papaya>0</papaya>
+		  <orange>0</orange>
+		  <cantaloupe>0</cantaloupe>
+		  <kiwi>0</kiwi>
+		  <watermelon>0</watermelon>
+		  
+		  <!-- Beans -->
+		  <lentils>0</lentils>
+		  <red_kidney_beans>0</red_kidney_beans>
+		  <great_northern_beans>0</great_northern_beans>
+		  <adzuki_beans>0</adzuki_beans>
+		  <black_beans>0</black_beans>
+		  <black_eyed_peas>0</black_eyed_peas>
+		  <pinto_beans>0</pinto_beans>
+		  <edamame>0</edamame>
+		  <split_peas>0</split_peas>
+		  <chickpeas>0</chickpeas>
+		  
+		  <!-- Nuts and Seeds -->
+		  <sunflower_seeds>0</sunflower_seeds>
+		  <sesame_seeds>0</sunflower_seeds>
+		  <flax_seeds>0</flax_seeds>
+		  <pumpkin_seeds>0</pumpkin_seeds>
+		  <pistachios>0</pistachios>
+		  <pecans>0</pecans>
+		  <almonds>0</almonds>
+		  <walnuts>0</walnuts>
+		  <hazelnuts>0</hazelnuts>
+		  <cashews>0</cashews>     
+        </NewWidgets>        
+      </instance>
+
+      <bind nodeset="/NewWidgets/mustard_turnip_collard_greens" type="select1"/>
+      <bind nodeset="/NewWidgets/kale" type="select1"/>
+      <bind nodeset="/NewWidgets/watercress" type="select1"/>
+      <bind nodeset="/NewWidgets/bok_choy" type="select1"/>
+      <bind nodeset="/NewWidgets/spinach" type="select1"/>
+      <bind nodeset="/NewWidgets/broccoli_rabe" type="select1"/>
+      <bind nodeset="/NewWidgets/chinese_napa_cabbage" type="select1"/> 
+      <bind nodeset="/NewWidgets/brussel_sprouts" type="select1"/> 
+      <bind nodeset="/NewWidgets/swiss_chard" type="select1"/>
+	  
+      <bind nodeset="/NewWidgets/radish" type="select1"/> 
+      <bind nodeset="/NewWidgets/bean_sprout" type="select1"/> 
+      <bind nodeset="/NewWidgets/red_pepper" type="select1"/> 
+      <bind nodeset="/NewWidgets/radicchio" type="select1"/> 
+      <bind nodeset="/NewWidgets/turnip" type="select1"/> 
+      <bind nodeset="/NewWidgets/carrot" type="select1"/> 
+      <bind nodeset="/NewWidgets/cauliflower" type="select1"/> 
+      <bind nodeset="/NewWidgets/artichoke" type="select1"/> 
+      <bind nodeset="/NewWidgets/tomato" type="select1"/> 
+      <bind nodeset="/NewWidgets/butternut_squash" type="select1"/>
+	   
+      <bind nodeset="/NewWidgets/strawberry" type="select1"/> 
+      <bind nodeset="/NewWidgets/blackberries" type="select1"/> 
+      <bind nodeset="/NewWidgets/plum" type="select1"/> 
+      <bind nodeset="/NewWidgets/raspberries" type="select1"/> 
+      <bind nodeset="/NewWidgets/blueberries" type="select1"/> 
+      <bind nodeset="/NewWidgets/papaya" type="select1"/> 
+      <bind nodeset="/NewWidgets/orange" type="select1"/> 
+      <bind nodeset="/NewWidgets/cantaloupe" type="select1"/> 
+      <bind nodeset="/NewWidgets/kiwi" type="select1"/> 
+      <bind nodeset="/NewWidgets/watermelon" type="select1"/>
+	   
+      <bind nodeset="/NewWidgets/lentils" type="select1"/> 
+      <bind nodeset="/NewWidgets/red_kidney_beans" type="select1"/> 
+      <bind nodeset="/NewWidgets/great_northern_beans" type="select1"/> 
+      <bind nodeset="/NewWidgets/adzuki_beans" type="select1"/> 
+      <bind nodeset="/NewWidgets/black_beans" type="select1"/> 
+      <bind nodeset="/NewWidgets/black_eyed_peas" type="select1"/> 
+      <bind nodeset="/NewWidgets/pinto_beans" type="select1"/> 
+      <bind nodeset="/NewWidgets/edamame" type="select1"/> 
+      <bind nodeset="/NewWidgets/split_peas" type="select1"/> 
+      <bind nodeset="/NewWidgets/chickpeas" type="select1"/>
+	   
+      <bind nodeset="/NewWidgets/sunflower_seeds" type="select1"/> 
+      <bind nodeset="/NewWidgets/sesame_seeds" type="select1"/> 
+      <bind nodeset="/NewWidgets/flax_seeds" type="select1"/> 
+      <bind nodeset="/NewWidgets/pumpkin_seeds" type="select1"/> 
+      <bind nodeset="/NewWidgets/pistachios" type="select1"/> 
+      <bind nodeset="/NewWidgets/pecans" type="select1"/> 
+      <bind nodeset="/NewWidgets/almonds" type="select1"/> 
+      <bind nodeset="/NewWidgets/walnuts" type="select1"/> 
+      <bind nodeset="/NewWidgets/hazelnuts" type="select1"/> 
+      <bind nodeset="/NewWidgets/cashews" type="select1"/>    
+    </model>
+
+      <h:body>       
+      
+        <!-- First page: ANDI VEGETABLES, all contained within first <group... tag-->
+        <group appearance="field-list">
+          <label>ANDI Vegetables: how many servings of the following did you eat today?</label>          
+                    
+          <select1 appearance="minimal" ref="/NewWidgets/mustard_turnip_collard_greens">
+          <label>Mustard/Turnip/Collard Greens (1000)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>
+        
+        <select1 appearance="minimal" ref="/NewWidgets/kale">
+          <label>Kale (1000)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>
+        
+        <select1 appearance="minimal" ref="/NewWidgets/watercress">
+          <label>Watercress (1000)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4</label>
+            <value>4+</value>
+          </item>
+        </select1>
+		
+        <select1 appearance="minimal" ref="/NewWidgets/bok_choy">
+          <label>Bok Choy/Baby Bok Choy (824)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4</label>
+            <value>4+</value>
+          </item>
+        </select1>
+        
+        <select1 appearance="minimal" ref="/NewWidgets/spinach">
+          <label>Spinach (739)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4</label>
+            <value>4+</value>
+          </item>
+        </select1>
+        
+        <select1 appearance="minimal" ref="/NewWidgets/broccoli_rabe">
+          <label>Broccoli Rabe (715)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4</label>
+            <value>4+</value>
+          </item>
+        </select1>
+        
+        <select1 appearance="minimal" ref="/NewWidgets/chinese_napa_cabbage">
+          <label>Chinese/Napa Cabbage (704)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4</label>
+            <value>4+</value>
+          </item>
+        </select1>
+        
+        <select1 appearance="minimal" ref="/NewWidgets/brussel_sprouts">
+          <label>Brussel Sprouts (672)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4</label>
+            <value>4+</value>
+          </item>
+        </select1>
+        
+        <select1 appearance="minimal" ref="/NewWidgets/swiss_chard">
+          <label>Swiss Chard (670)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4</label>
+            <value>4+</value>
+          </item>
+        </select1>
+        
+        <select1 appearance="minimal" ref="/NewWidgets/arugula">
+          <label>Watercress (559)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4</label>
+            <value>4+</value>
+          </item>
+        </select1>        
+        </group>
+
+        <!-- Second page: ANDI NON-GREEN VEGETABLES, all contained within first <group... tag-->
+        <group appearance="field-list">
+          <label>ANDI NON-GREEN VEGETABLES: how many servings of the following did you eat today?</label>        
+					
+          <select1 appearance="minimal" ref="/NewWidgets/radish">
+          <label>Radish (554)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>
+        
+        <select1 appearance="minimal" ref="/NewWidgets/bean_sprout">
+          <label>Bean Sprouts (444)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>
+        
+        <select1 appearance="minimal" ref="/NewWidgets/red_pepper">
+          <label>Red Pepper (366)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>
+		
+        <select1 appearance="minimal" ref="/NewWidgets/radicchio">
+          <label>Radicchio (359)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>            
+		
+        <select1 appearance="minimal" ref="/NewWidgets/turnip">
+          <label>Turnip (337)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>        
+		
+        <select1 appearance="minimal" ref="/NewWidgets/carrot">
+          <label>Carrot (336)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>        
+		
+        <select1 appearance="minimal" ref="/NewWidgets/cauliflower">
+          <label>Cauliflower (295)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>        
+		
+        <select1 appearance="minimal" ref="/NewWidgets/artichoke">
+          <label>Artichoke (244)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>        
+		
+        <select1 appearance="minimal" ref="/NewWidgets/Tomato">
+          <label>Tomato (190)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>        
+		
+        <select1 appearance="minimal" ref="/NewWidgets/butternut_squash">
+          <label>Butternut Squash (156)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>                   
+        </group>
+		
+        <!-- Third page: ANDI VEGETABLES, all contained within first <group... tag-->
+        <group appearance="field-list">
+          <label>ANDI FRUITS: how many servings of the following did you eat today?</label>        
+					
+          <select1 appearance="minimal" ref="/NewWidgets/strawberry">
+          <label>Strawberry (212)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>
+        
+        <select1 appearance="minimal" ref="/NewWidgets/blackberries">
+          <label>Blackberries (178)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>
+        
+        <select1 appearance="minimal" ref="/NewWidgets/plum">
+          <label>Plum (157)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>
+		
+        <select1 appearance="minimal" ref="/NewWidgets/raspberries">
+          <label>Raspberries (145)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>     
+		
+        <select1 appearance="minimal" ref="/NewWidgets/blueberries">
+          <label>Blueberries (130)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>        
+		
+        <select1 appearance="minimal" ref="/NewWidgets/papaya">
+          <label>Papaya (118)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>        
+		
+        <select1 appearance="minimal" ref="/NewWidgets/orange">
+          <label>Orange (109)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>        
+		
+        <select1 appearance="minimal" ref="/NewWidgets/cantaloupe">
+          <label>Cantaloupe (100)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>        
+		
+        <select1 appearance="minimal" ref="/NewWidgets/kiwi">
+          <label>Kiwi (97)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>        
+		
+        <select1 appearance="minimal" ref="/NewWidgets/Watermelon">
+          <label>Watermelon (91)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>                 
+        </group>
+		
+        <!-- Fourth page: ANDI VEGETABLES, all contained within first <group... tag-->
+        <group appearance="field-list">
+          <label>ANDI BEANS: how many servings of the following did you eat today?</label>        
+					
+          <select1 appearance="minimal" ref="/NewWidgets/lentils">
+          <label>Lentils (104)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>
+        
+        <select1 appearance="minimal" ref="/NewWidgets/red_kidney_beans">
+          <label>Red Kidney Beans (100)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>
+        
+        <select1 appearance="minimal" ref="/NewWidgets/great_northern_beans">
+          <label>Great Northern Beans (94)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>
+		
+        <select1 appearance="minimal" ref="/NewWidgets/adzuki_beans">
+          <label>Adzuki Beans (84)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>     
+		
+        <select1 appearance="minimal" ref="/NewWidgets/black_beans">
+          <label>Black Beans (83)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>        
+		
+        <select1 appearance="minimal" ref="/NewWidgets/black_eyed_peas">
+          <label>Black-Eyed Peas (82)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>        
+		
+        <select1 appearance="minimal" ref="/NewWidgets/pinto_beans">
+          <label>Pinto Beans (61)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>        
+		
+        <select1 appearance="minimal" ref="/NewWidgets/edamame">
+          <label>Edamame (58)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>        
+		
+        <select1 appearance="minimal" ref="/NewWidgets/split_peas">
+          <label>Split Peas (58)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>        
+		
+        <select1 appearance="minimal" ref="/NewWidgets/chickpeas">
+          <label>Chickpeas (Garbanzos) (57)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>                 
+        </group>
+		
+        <!-- Fifth page: ANDI VEGETABLES, all contained within first <group... tag-->
+        <group appearance="field-list">
+          <label>ANDI NUTS AND SEEDS: how many servings of the following did you eat today?</label>        
+					
+          <select1 appearance="minimal" ref="/NewWidgets/sunflower_seeds">
+          <label>Sunflower Seeds (78)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>
+        
+        <select1 appearance="minimal" ref="/NewWidgets/sesame_seeds">
+          <label>Sesame Seeds (65)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>
+        
+        <select1 appearance="minimal" ref="/NewWidgets/flax_seeds">
+          <label>Flax Seeds (65)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>
+		
+        <select1 appearance="minimal" ref="/NewWidgets/pumpkin_seeds">
+          <label>Pumpkin Seeds (52)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>     
+		
+        <select1 appearance="minimal" ref="/NewWidgets/pistachios">
+          <label>Pistachios (48)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>        
+		
+        <select1 appearance="minimal" ref="/NewWidgets/pecans">
+          <label>Pecans (41)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>        
+		
+        <select1 appearance="minimal" ref="/NewWidgets/almonds">
+          <label>Almonds (38)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>        
+		
+        <select1 appearance="minimal" ref="/NewWidgets/walnuts">
+          <label>Walnuts (34)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>        
+		
+        <select1 appearance="minimal" ref="/NewWidgets/hazelnuts">
+          <label>Hazelnuts (32)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>        
+		
+        <select1 appearance="minimal" ref="/NewWidgets/cashews">
+          <label>Cashews (27)</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>                 
+        </group>
+        
+      </h:body>
+
+    
+
+
+
+  </h:head>
+</h:html>
