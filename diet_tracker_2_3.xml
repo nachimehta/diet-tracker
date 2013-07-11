@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>Diet_Tracker_2_3</h:title>
+    <model>
+      <instance>
+        <NewWidgets id="NewWidgets">
+          <kiwi>0</kiwi>
+          <blue_berry>0</blue_berry>
+          <strawberry>0</strawberry>
+          <kale>0</kale>
+          <sprouts>0</sprouts>
+          <turnip>0</turnip>                 
+        </NewWidgets>        
+      </instance>
+
+      <bind nodeset="/NewWidgets/kiwi" type="select1"/>
+      <bind nodeset="/NewWidgets/blue_berry" type="select1"/>
+      <bind nodeset="/NewWidgets/strawberry" type="select1"/>
+      <bind nodeset="/NewWidgets/kale" type="select1"/>
+      <bind nodeset="/NewWidgets/sprouts" type="select1"/>
+      <bind nodeset="/NewWidgets/turnip" type="select1"/>      
+    </model>
+
+      <h:body>       
+      
+        <!-- First page: ANDI FRUITS, all contained within first <group... tag-->
+        <group appearance="field-list">
+          <label>ANDI FRUITS: how many servings of the following did you eat today?</label>          
+                    
+          <select1 appearance="minimal" ref="/NewWidgets/kiwi">
+          <label>Kiwis</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>
+        
+        <select1 appearance="minimal" ref="/NewWidgets/blue_berry">
+          <label>Blue Berry</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>
+        
+        <select1 appearance="minimal" ref="/NewWidgets/strawberry">
+          <label>Strawberry Daiquiri</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more! Take it easy cowboy.</label>
+            <value>4+</value>
+          </item>
+        </select1>        
+        </group>
+
+        <!-- Second page: ANDI VEGETABLES, all contained within first <group... tag-->
+        <group appearance="field-list">
+          <label>ANDI VEGETABLES: how many servings of the following did you eat today?</label>          
+                    
+          <select1 appearance="minimal" ref="/NewWidgets/kale">
+          <label>Kale</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>
+        
+        <select1 appearance="minimal" ref="/NewWidgets/sprouts">
+          <label>Brussels Sprouts</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>
+        
+        <select1 appearance="minimal" ref="/NewWidgets/turnip">
+          <label>Turnips</label>
+          <item>
+            <label>0</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>4+</value>
+          </item>
+        </select1>        
+        </group>
+        
+        
+      </h:body>
+
+    
+
+
+
+  </h:head>
+</h:html>
