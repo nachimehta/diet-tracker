@@ -1,10 +1,15 @@
 <?xml version="1.0"?>
 <h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
   <h:head>
-    <h:title>Diet_Tracker_2_3</h:title>
+    <h:title>Diet_Tracker</h:title>
     <model>
       <instance>
-        <NewWidgets id="NewWidgets">
+        <NewWidgets id="DietTracker">
+		  <!-- Meta Data -->
+		  <username/>
+		  <start/>
+		  <end/>	
+			
 		  <!-- Green Vegetables -->
 		  <mustard_turnip_collard_greens>0</mustard_turnip_collard_greens>
 		  <kale>0</kale>
@@ -55,7 +60,7 @@
 		  
 		  <!-- Nuts and Seeds -->
 		  <sunflower_seeds>0</sunflower_seeds>
-		  <sesame_seeds>0</sunflower_seeds>
+		  <sesame_seeds>0</sesame_seeds>
 		  <flax_seeds>0</flax_seeds>
 		  <pumpkin_seeds>0</pumpkin_seeds>
 		  <pistachios>0</pistachios>
@@ -66,7 +71,13 @@
 		  <cashews>0</cashews>     
         </NewWidgets>        
       </instance>
+	  
+	  <!-- Meta Data -->
+	  <bind nodeset="/NewWidgets/username" type="string" jr:preload="property" jr:preloadParams="username"/>
+	  <bind nodeset="/NewWidgets/start" type="dateTime" jr:preload="timestamp" jr:preloadParams="start"/>
+	  <bind nodeset="/NewWidgets/end" type="dateTime" jr:preload="timestamp" jr:preloadParams="end"/>
 
+      <!-- Food Data -->
       <bind nodeset="/NewWidgets/mustard_turnip_collard_greens" type="select1"/>
       <bind nodeset="/NewWidgets/kale" type="select1"/>
       <bind nodeset="/NewWidgets/watercress" type="select1"/>
@@ -565,7 +576,7 @@
           </item>
         </select1>        
 		
-        <select1 appearance="minimal" ref="/NewWidgets/Tomato">
+        <select1 appearance="minimal" ref="/NewWidgets/tomato">
           <label>Tomato (190)</label>
           <item>
             <label>0</label>
@@ -834,7 +845,7 @@
           </item>
         </select1>        
 		
-        <select1 appearance="minimal" ref="/NewWidgets/Watermelon">
+        <select1 appearance="minimal" ref="/NewWidgets/watermelon">
           <label>Watermelon (91)</label>
           <item>
             <label>0</label>
